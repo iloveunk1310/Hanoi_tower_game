@@ -143,6 +143,15 @@ int manhinhchinh(int &snd) {
         _getch();
         return 1;
     }
+    else if (cn == 4) {
+        draw_nen();
+        gotoXY(0, 1);
+        cout << "Use 'A' and 'D' to move beetween 3 pegs";
+        cout << " \nUse Enter to choose one disk on the top of the current peg, then move to other peg and use Enter again.";
+        cout << "\nRead the rules of the game on the Internet ._.\n\nPress any key to continue...";
+        _getch();
+        return 1;
+    }
     else if (cn == 6) {
         dialog("Exit");
         gotoXY(36, 18); cout << "Exit to desktop?";
